@@ -17,6 +17,8 @@ export class CategoryService {
     return this.httpClient.get<Category[]>(this.apiUrl);
   }
 
+  
+
   public getCategorybyId(id:number)
   {
     let url = `${this.apiUrl}/${id}`;
