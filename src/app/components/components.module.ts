@@ -7,14 +7,15 @@ import { MenuCategoryComponent } from './menu-category/menu-category.component';
 import { PageTitleComponent } from './page-title/page-title.component';
 import { ArticlesComponent } from './articles/articles.component';
 import { UrlformatPipe } from '../pipes/urlformat.pipe';
+import { MenuArticleMostViewComponent } from './menu-article-most-view/menu-article-most-view.component';
 
 
 
 @NgModule({
-  declarations: [MenuCategoryComponent, PageTitleComponent, ArticlesComponent,UrlformatPipe],
+  declarations: [MenuCategoryComponent, PageTitleComponent, ArticlesComponent,UrlformatPipe, MenuArticleMostViewComponent],
   imports: [
     CommonModule,RouterModule,NgxPaginationModule
   ],
-  exports:[MenuCategoryComponent,PageTitleComponent,ArticlesComponent]
+  exports:[MenuCategoryComponent,PageTitleComponent,ArticlesComponent,MenuArticleMostViewComponent]
 })
 export class ComponentsModule { }

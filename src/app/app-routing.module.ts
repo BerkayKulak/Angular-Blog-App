@@ -8,6 +8,8 @@ import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.compone
 import { ContactComponent } from './pages/contact/contact.component';
 import { HomeComponent } from './pages/home/home.component';
 import { ArticleComponent } from './pages/article/article.component';
+import { CategoryArticlesComponent } from './pages/category-articles/category-articles.component';
+import { SearchComponent } from './pages/search/search.component';
 const routes: Routes = [
   {
     path: '',
@@ -25,6 +27,19 @@ const routes: Routes = [
        path:"makale/:title/:id",
        component:ArticleComponent
       },
+      {
+        path:"kategori/:name/:id",
+        component:CategoryArticlesComponent
+      },
+      {
+        path:"kategori/:name/:id/sayfa/:page",
+        component:CategoryArticlesComponent
+      },
+      {
+        path:"arama/sayfa/:page",
+        component:SearchComponent
+      },
+
       {
         path: 'hakkimda',
         component: AboutMeComponent,

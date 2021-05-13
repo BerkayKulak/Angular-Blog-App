@@ -1,7 +1,7 @@
 <div class="card border-primary" style="max-width: 18rem">
   <div class="card-header">Kategori</div>
   <div class="card-body text-primary">
-    <div *ngIf="categories.length==0" class="d-flex justify-content-center">
+    <div *ngIf="categories.length == 0" class="d-flex justify-content-center">
       <div class="spinner-border text-primary" role="status">
         <span class="visually-hidden">Loading...</span>
       </div>
@@ -9,7 +9,9 @@
 
     <h3 *ngFor="let item of categories">
       <strong>
-        <a [routerLink]="['/kategori', item.name, item.id]" class="btn btn-link"
+        <a
+          [routerLink]="['/kategori', item.name | urlformat, item.id]"
+          class="btn btn-link"
           ><i class="fa fa-arrow-circle-right"></i> {{ item.name }}</a
         >
       </strong>
