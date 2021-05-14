@@ -8,11 +8,12 @@ import { AppComponent } from './app.component';
 import { AdminLayoutComponent } from './layout/admin-layout/admin-layout.component';
 
 import { AdminNavComponent } from './nav/admin-nav/admin-nav.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 
 @NgModule({
   declarations: [AppComponent, AdminLayoutComponent, AdminNavComponent],
-  imports: [BrowserModule, AppRoutingModule, HttpClientModule, MainModule],
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule, MainModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
