@@ -14,11 +14,12 @@ import { CategoryArticlesComponent } from './category-articles/category-articles
 import { SearchComponent } from './search/search.component';
 import { ArchiveComponent } from './archive/archive.component';
 import { MaterialModule } from '../modules/material/material.module';
-
+import { AdminLoginComponent } from './admin-login/admin-login.component';
+import { FooterNavComponent } from '../nav/footer-nav/footer-nav.component';
 
 
 @NgModule({
-  declarations: [MainLayoutComponent,MainNavComponent,HomeComponent,AboutMeComponent,ContactComponent, ArticleComponent, CategoryArticlesComponent, SearchComponent, ArchiveComponent],
+  declarations: [MainLayoutComponent,MainNavComponent,HomeComponent,AboutMeComponent,ContactComponent, ArticleComponent, CategoryArticlesComponent, SearchComponent, ArchiveComponent, AdminLoginComponent,FooterNavComponent],
   imports: [
     CommonModule,BrowserModule,HttpClientModule,AppRoutingModule,ComponentsModule,MaterialModule
   ]
